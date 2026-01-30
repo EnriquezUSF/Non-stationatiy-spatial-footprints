@@ -2,8 +2,7 @@
 
 clear; close all; clc
 
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
 addpath(genpath([MF 'toolbox']))
 
 fsave = [MF 'S9 Climate indices at sizes\S3 Test significance climate indices\'];
@@ -205,3 +204,4 @@ end
 % Only Kruskal-Wallis significant	Distributions differ, possibly due to skewness or outliers, not just mean.
 % Only Ranksum significant	Extreme differences exist between two selected categories (e.g., Q1 vs Q4).
 % All three significant	Strong evidence that the climate index varies systematically across size categories, including NoEvent.
+
