@@ -1,8 +1,7 @@
 clear; close all; clc
 
 % Main folder
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
 addpath([MF 'toolbox'])
 
 load([MF '\S5 KMeans\KMeans NOC9 - Organized\KMeans_sorted.mat'])
@@ -39,3 +38,4 @@ for i = 1: 9
     title(['Cluster ' num2str(data_in(1,3))])
 
 end
+
