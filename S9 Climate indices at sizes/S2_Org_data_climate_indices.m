@@ -2,8 +2,7 @@
 
 clear; close all; clc
 
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
 addpath(genpath([MF 'toolbox']))
 
 fsave = [MF 'S9 Climate indices at sizes\S2 Org data climate indices\'];
@@ -119,3 +118,4 @@ for id_season = 3 % 1:3
 
     save([fsave 'SF_Q_CI_' season '.mat'],'Clusters','-mat')
 end
+
