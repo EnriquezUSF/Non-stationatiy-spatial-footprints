@@ -1,8 +1,8 @@
 % clear; close all; clc
 
 % Main folder
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
+
 addpath(genpath([MF 'toolbox']))
 
 fsave = [MF 'S6 Size evolution\'];
@@ -116,6 +116,7 @@ hf.PaperPosition = [0 0 16.97 39.69];
 
 FigName   = [fsave 'Size Evolution_' season '.png'];
 exportgraphics(hf,FigName,'Resolution',500)
+
 
 
 
