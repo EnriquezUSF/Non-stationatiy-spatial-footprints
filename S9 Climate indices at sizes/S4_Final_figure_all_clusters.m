@@ -1,8 +1,7 @@
 
 clear; close all; clc
 
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
 addpath(genpath([MF 'toolbox']))
 
 fsave = [MF 'S9 Climate indices at sizes\S3 Test significance climate indices\'];
@@ -88,3 +87,4 @@ for ii = 1:9
 end
 
 % exportgraphics(fig,[fsave2 'AllClusters_' season '.jpg'],'Resolution',500);
+
