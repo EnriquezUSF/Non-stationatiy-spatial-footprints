@@ -1,8 +1,7 @@
 clear; close all; clc
 
 % Main folder
-MF = 'C:\Users\enriqueza\Documents\Seasonal variations 4\S8 Decadal changes\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\S8 Decadal changes\'];
 addpath(genpath([MF 'toolbox']))
 
 fsave = [MF 'S8_2_KMeans\'];
@@ -97,6 +96,7 @@ save([fsave 'KMeans.mat'], 'KMeans', 'time_tw', '-mat');
 close all;
 
 clearvars -except fsave MF tw NC
+
 
 
 
