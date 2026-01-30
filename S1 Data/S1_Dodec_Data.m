@@ -1,10 +1,12 @@
 clear; close all; clc
 
+% choose folder to save
 fsave = 'D:\Temporal variations SF\Seasonal variations 3\S1 Data\';
 
 %% Load water levels lonlat
 
-cd('H:\Javed - Data\CODEC\WL\cf_esl')
+% folder containing CoDEC
+cd('\cf_esl')
 
 infoJ = ncinfo('gtsm_station00000.nc');
 
