@@ -1,8 +1,7 @@
 clear; close all; clc
 
 % Main folder
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
 addpath([MF 'toolbox'])
 
 fsave = [MF 'S5 KMeans\KMeans NOC9 - Organized\'];
@@ -157,6 +156,7 @@ for iFig = 1:length(FigList)
     FigName   = ['Fig ' num2str(get(FigHandle, 'Number')) '.png'];
     exportgraphics(FigHandle,fullfile(figsave, FigName))
 end
+
 
 
 
