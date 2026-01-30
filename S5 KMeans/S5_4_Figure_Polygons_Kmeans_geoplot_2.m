@@ -1,8 +1,7 @@
 clear; close all; clc
 
 % Main folder
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\]';
 addpath([MF 'toolbox'])
 
 fsave = [MF 'S5 KMeans\Polygons\Figures\'];
@@ -159,4 +158,5 @@ end
 exportgraphics(fig,...
     [fsave 'Subplot_KMeans_geoplot_' titles{ii} ' 2.jpg'],...
     'Resolution',500)
+
 
