@@ -2,8 +2,7 @@
 close all; clc; clear
 
 % Main folder
-MF = 'C:\Users\enriqueza\OneDrive - University of South Florida\Working papers\Paper spatial footprints\Seasonal variations 4\';
-addpath(genpath('C:\Users\enriqueza\OneDrive - University of South Florida\matlab_toolboxes'))
+MF = [pwd 'Seasonal variations 4\'];
 addpath(genpath([MF 'toolbox']))
 
 season = 'FullYear';
@@ -132,4 +131,5 @@ function plot_map_subplot(msl,u,v,lon,lat,coastline,zlim) %
     % cb.Position(4) = 0.01;
 
 end
+
 
